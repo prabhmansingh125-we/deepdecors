@@ -1,0 +1,49 @@
+.dd-accordion{ margin-top: 26px; display:flex; flex-direction:column; gap: 12px; }
+
+.dd-acc-item{
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.04);
+  overflow:hidden;
+}
+
+.dd-acc-btn{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: 14px;
+  padding: 16px;
+  background: transparent;
+  border:none;
+  color: var(--text);
+  cursor:pointer;
+  font-weight: 850;
+  font-family: var(--heading);
+  text-align:left;
+}
+
+.dd-acc-icon{
+  width: 30px;
+  height: 30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.22);
+  transition: transform 220ms ease;
+}
+
+.dd-acc-item.is-open .dd-acc-icon{ transform: rotate(45deg); }
+
+.dd-acc-panel{
+  max-height: 0;
+  overflow:hidden;
+  transition: max-height 320ms ease;
+}
+
+.dd-acc-item.is-open .dd-acc-panel{ max-height: 220px; }
+
+.dd-acc-content{ padding: 0 16px 16px; color: var(--muted); line-height:1.75; }
+

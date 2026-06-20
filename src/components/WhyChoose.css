@@ -1,0 +1,29 @@
+.dd-why-grid{ grid-template-columns: repeat(4, minmax(0,1fr)); margin-top: 26px; }
+
+.dd-why-card{ position:relative; padding: 18px; overflow:hidden; }
+.dd-why-card::after{
+  content:'';
+  position:absolute;
+  inset:-1px;
+  background: radial-gradient(400px 180px at 20% 0%, rgba(167,216,212,0.22), transparent 55%);
+  opacity:0;
+  transition: opacity 260ms ease;
+  pointer-events:none;
+}
+.dd-why-card:hover::after{ opacity:1; }
+
+.dd-why-num{
+  font-family: var(--heading);
+  font-weight: 900;
+  font-size: 38px;
+  letter-spacing: -0.02em;
+  color: rgba(167,216,212,0.22);
+}
+
+.dd-why-title{ margin-top: 10px; font-weight: 900; font-family: var(--heading); font-size: 16px; }
+.dd-why-desc{ margin-top: 10px; color: var(--muted); line-height: 1.7; font-size: 14px; }
+
+@media (max-width: 980px){
+  .dd-why-grid{ grid-template-columns: 1fr; }
+}
+

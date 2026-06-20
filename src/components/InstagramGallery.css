@@ -1,0 +1,36 @@
+.dd-insta-grid{ display:grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: 12px; margin-top: 26px; }
+
+.dd-insta-tile{ overflow:hidden; }
+.dd-insta-img{
+  height: 150px;
+  background:
+    radial-gradient(240px 120px at 20% 10%, rgba(167,216,212,0.18), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+  position:relative;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  transition: transform 260ms ease;
+}
+
+.dd-insta-tile:hover .dd-insta-img{ transform: scale(1.02); }
+
+.dd-insta-label{
+  position:absolute;
+  left: 10px;
+  bottom: 10px;
+  color: rgba(243,237,227,0.80);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.dd-insta-img-img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+@media (max-width: 980px){
+  .dd-insta-grid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+

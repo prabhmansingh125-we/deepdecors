@@ -1,0 +1,81 @@
+.dd-custom-cta{
+  padding: 22px;
+  display:grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 18px;
+  position:relative;
+  overflow:hidden;
+}
+
+.dd-custom-cta::before{
+  content:'';
+  position:absolute;
+  inset:-2px;
+  background: radial-gradient(900px 320px at 15% 10%, rgba(167,216,212,0.18), transparent 60%),
+              radial-gradient(700px 260px at 90% 20%, rgba(185,139,115,0.14), transparent 55%);
+  opacity:0.95;
+  pointer-events:none;
+}
+
+.dd-custom-left{ position:relative; z-index:1; }
+
+.dd-custom-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-top: 18px; }
+
+.dd-custom-right{ position:relative; z-index:1; display:flex; justify-content:flex-end; align-items:center; }
+
+.dd-custom-glass{
+  width: 320px;
+  height: 220px;
+  border-radius: 40px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.16);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 40px 120px rgba(0,0,0,0.25);
+  position:relative;
+  overflow:hidden;
+}
+
+.dd-custom-glass::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(160px 120px at 30% 30%, rgba(167,216,212,0.26), transparent 60%),
+    radial-gradient(220px 160px at 80% 70%, rgba(185,139,115,0.18), transparent 55%);
+  opacity:0.9;
+}
+
+.dd-custom-badge{
+  position:absolute;
+  right: 22px;
+  top: 22px;
+  width: 220px;
+  padding: 12px 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.22);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.dd-custom-badge-title{ font-family: var(--heading); font-weight: 900; }
+.dd-custom-badge-sub{ margin-top: 8px; color: var(--muted); font-size: 13px; line-height:1.6; }
+
+.dd-custom-orbs{
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, rgba(167,216,212,0.20), transparent 60%);
+  border: 1px solid rgba(167,216,212,0.12);
+  transform: translate(40px, 40px);
+  opacity:0.9;
+}
+
+@media (max-width: 980px){
+  .dd-custom-cta{ grid-template-columns: 1fr; }
+  .dd-custom-right{ justify-content:flex-start; }
+}
+

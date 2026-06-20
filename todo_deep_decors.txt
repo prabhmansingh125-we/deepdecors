@@ -1,0 +1,65 @@
+DEEP DECORS Website — Status
+Last updated: June 2026
+
+✅ COMPLETED (all fixed):
+- src/data/useDeepDecorsContent.js — hook created (was missing)
+- src/data/deepDecorsContent.json — all content/brand data in one place
+- Contact form → now sends via WhatsApp (no backend needed)
+- Footer → reads real brand links from JSON
+- CustomOrders → reads real WhatsApp link from JSON  
+- CustomerReviews → reads from JSON, shows avatar initials if no photo
+- InstagramGallery → real Instagram link + Follow button
+- FAQ → payment method placeholder replaced
+- WhatsApp number, email, Instagram, location → all in deepDecorsContent.json
+
+✅ NEW — Owner Dashboard / CMS (Supabase-backed):
+- /admin route — owner & staff login (src/admin/AdminLogin.jsx)
+- Admin Dashboard with sidebar nav (src/admin/AdminDashboard.jsx)
+- Content editors: Hero, Featured Collections, Reviews, Brand & Contact
+  — all read/write live to Supabase, with the local JSON as a safe fallback
+- Media Library — upload/browse/delete product & review photos (Supabase Storage)
+- Role management (owner-only) — assign "owner" or "staff" to teammates
+- Public site (src/data/useDeepDecorsContent.js) now pulls live edits from
+  Supabase automatically; falls back to deepDecorsContent.json if Supabase
+  isn't configured or a fetch fails — the site never breaks
+- supabase/schema.sql — run this once in your Supabase project to set up
+  the tables, permissions, and storage bucket
+- See ADMIN_SETUP.md for full setup steps
+
+⏳ YOU STILL NEED TO DO:
+1. Set up Supabase (see ADMIN_SETUP.md) and fill in .env
+2. Edit src/data/deepDecorsContent.json (or just use the new /admin dashboard
+   instead — it edits the same content, but live and without code):
+   - Set your real WhatsApp number (replace 9XXXXXXXXX)
+   - Confirm Instagram handle/URL
+   - Set your real email
+   
+3. Add real product photos:
+   - Easiest: upload them via /admin → Media Library or directly inside the
+     Collections/Reviews editors
+   - Or still set "image" fields manually in deepDecorsContent.json if you
+     don't want to use the dashboard yet
+   - Add photos to Gallery component tiles (still hardcoded — see below)
+   - Add photos to InstagramGallery tiles
+   
+4. Add real customer reviews — now easiest done via /admin → Reviews
+
+5. Future: extend the CMS to FAQ, Why Choose, About, Signature Experience,
+   and Gallery sections — these currently still have hardcoded content
+   inside their own components (not yet wired to deepDecorsContent.json)
+6. Future: Cart system + payment gateway (Razorpay recommended for India)
+7. Future: order management inside the admin dashboard
+
+HOW TO RUN:
+  npm install
+  npm run dev
+
+HOW TO USE THE OWNER DASHBOARD:
+  See ADMIN_SETUP.md
+
+HOW TO DEPLOY (GitHub Pages):
+  npm run build
+  → upload /dist folder to your GitHub Pages repo
+  (dist/404.html is generated automatically so /admin still works after a
+  hard refresh — see scripts/copy-404.js)
+

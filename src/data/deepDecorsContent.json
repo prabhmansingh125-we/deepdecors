@@ -1,0 +1,126 @@
+{
+  "brand": {
+    "name": "Deep Decors",
+    "tagline": "Premium Gifting, Better Experience.",
+    "instagram": "https://www.instagram.com/deepdecors_",
+    "instagramHandle": "@deepdecors_",
+    "whatsapp": "https://wa.me/916283149797",
+    "whatsappNumber": "+91 62831 49797",
+    "phoneNumbers": ["+91 62831 49797", "+91 78375 23751"],
+    "email": "deepdecors125@gmail.com",
+    "location": "Amritsar, Punjab, India",
+    "logo": "assets/img/brand/dd-logo-512.jpg"
+  },
+
+  "hero": {
+    "kicker": "PREMIUM GIFTING",
+    "title": "Every Gift Tells A Story.",
+    "description": "At Deep Decors, we believe gifting is more than an exchange—it's an experience. Every creation is crafted with elegance, attention to detail, and a touch of luxury to make every occasion unforgettable.",
+    "assets": {
+      "compositionBg": null,
+      "box": null,
+      "flowers": null,
+      "ribbon": null,
+      "pearls": null,
+      "waxSeal": null,
+      "hamper": null,
+      "tag": null,
+      "slides": [
+        {
+          "desktop": "assets/img/hero/hamper-desktop.jpg",
+          "mobile": "assets/img/hero/hamper-mobile.jpg",
+          "alt": "Premium dry fruit and cookie hamper, gift-wrapped with a gold ribbon and flowers"
+        },
+        {
+          "desktop": "assets/img/hero/white-bag-desktop.jpg",
+          "mobile": "assets/img/hero/white-bag-mobile.jpg",
+          "alt": "Luxury white gift bag finished with a gold and maroon ribbon bow"
+        },
+        {
+          "desktop": "assets/img/hero/prada-basket-desktop.jpg",
+          "mobile": "assets/img/hero/prada-basket-mobile.jpg",
+          "alt": "Designer handbag gift wrapped in a dried flower basket"
+        }
+      ]
+    }
+  },
+
+  "featuredCollections": {
+    "items": [
+      {
+        "title": "Wedding Gifts",
+        "description": "Bridal jewellery presentations, trousseau boxes, and return gifts wrapped with heirloom-level detail.",
+        "price": "Starting ₹999",
+        "cta": "Explore",
+        "image": "assets/img/collections/wedding-gifts.jpg"
+      },
+      {
+        "title": "Luxury Hampers",
+        "description": "Curated hampers with premium dry fruits, cookies, and handpicked artisan products—wrapped in elegance.",
+        "price": "Starting ₹1,499",
+        "cta": "Explore",
+        "image": "assets/img/collections/luxury-hampers.jpg"
+      },
+      {
+        "title": "Festive Gifts",
+        "description": "Diwali, New Year, and corporate festive hampers—premium presentation for every celebration.",
+        "price": "Starting ₹799",
+        "cta": "Explore",
+        "image": "assets/img/collections/festive-gifts.jpg"
+      },
+      {
+        "title": "Clothing Packaging",
+        "description": "Sarees, suits, and outfits wrapped in flowing fabric, pearls, and a signature floral flourish.",
+        "price": "Starting ₹599",
+        "cta": "Explore",
+        "image": "assets/img/collections/clothing-packaging.jpg"
+      },
+      {
+        "title": "Custom Luxury Gifts",
+        "description": "Bring your own designer pieces—we wrap them in our signature luxury style with premium materials.",
+        "price": "Starting ₹299",
+        "cta": "Explore",
+        "image": "assets/img/collections/custom-luxury-gifts.jpg"
+      }
+    ]
+  },
+
+  "gallery": [
+    { "image": "assets/img/gallery/gallery-01.jpg", "label": "Wedding favour hampers" },
+    { "image": "assets/img/gallery/gallery-02.jpg", "label": "Pearl & flower jewellery box" },
+    { "image": "assets/img/gallery/gallery-03.jpg", "label": "Premium dry fruit hamper" },
+    { "image": "assets/img/gallery/gallery-04.jpg", "label": "Da Milano luxury hamper" },
+    { "image": "assets/img/gallery/gallery-05.jpg", "label": "Clothing gift wrap, gold & lily" },
+    { "image": "assets/img/gallery/gallery-06.jpg", "label": "Clothing gift wrap, peacock detail" },
+    { "image": "assets/img/gallery/gallery-07.jpg", "label": "Designer bag gift basket" },
+    { "image": "assets/img/gallery/gallery-08.jpg", "label": "Signature white gift bag" },
+    { "image": "assets/img/gallery/gallery-09.jpg", "label": "Wedding return gift trio" }
+  ],
+
+  "instagram": [
+    { "image": "assets/img/instagram/insta-01.jpg", "label": "Signature white gift bag" },
+    { "image": "assets/img/instagram/insta-02.jpg", "label": "Premium dry fruit hamper" },
+    { "image": "assets/img/instagram/insta-03.jpg", "label": "Bridal jewellery presentation" },
+    { "image": "assets/img/instagram/insta-04.jpg", "label": "Clothing gift wrap, peacock detail" },
+    { "image": "assets/img/instagram/insta-05.jpg", "label": "Festive whisky gift basket" },
+    { "image": "assets/img/instagram/insta-06.jpg", "label": "Da Milano luxury hamper" }
+  ],
+
+  "reviews": [
+    {
+      "name": "Simran K.",
+      "review": "Deep Decors made my sister's birthday unforgettable. The hamper was so beautifully wrapped—she thought it was from a 5-star boutique. Absolutely premium quality!",
+      "image": null
+    },
+    {
+      "name": "Rahul M.",
+      "review": "Ordered corporate gifts for our team of 30. Every single box was immaculate. The attention to detail is remarkable. Will definitely order again for Diwali.",
+      "image": null
+    },
+    {
+      "name": "Priya S.",
+      "review": "The custom wedding hampers exceeded every expectation. Guests kept asking where we got them from. Deep Decors is in a league of their own.",
+      "image": null
+    }
+  ]
+}
